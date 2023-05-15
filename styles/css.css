@@ -14,10 +14,11 @@ body{
 .page{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100vw;
 }
 .header{
-    background-color: rgb(37, 37, 37);
+    background-color: #1f2937;
     color: white;
 }
 .header a{
@@ -25,17 +26,28 @@ body{
     text-decoration: none;
 }
 .content-one{
-    background-color: rgb(37, 37, 37);
+
+    background-color:#1f2937;
     color: white;
+    gap: 100px;
 }
 .content-one .content{
-    width: 400px;
+    margin-left: 100px;
+    flex: 1;
+    min-width: 400px;
     height: 120px;
+    text-align: center;
+    
+}
+.content-one .content h3{
+    font-size: 1;
 }
 .content-one .content h1, h3{
     margin: 0px;
 }
 .content-one img{
+    margin-right: 100px;
+    flex: 1;
     background-color: grey;
     width: 400px;
     height: 120px;
@@ -45,23 +57,6 @@ body{
 .content-two{
     display: flex;
     flex-direction: column;
-}
-.content-two .cards{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    gap: 40px;
-    text-align: center;
-}.content-two .cards .box{
-    border: solid 2px blue;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
-.content-two .cards p{
-    margin-top: 2px;
-    font-size: 12px;
-
 }
 .content-three{
     background-color: rgb(235, 231, 231);
@@ -94,4 +89,7 @@ body{
 }
 .header, .footer{
     flex: .2;
+}
+.content-two{
+    flex: 1.5;
 }
