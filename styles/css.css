@@ -10,6 +10,7 @@ body{
     height: 3000px;
     margin: 0;
     display: flex;
+    width: auto;
 }
 .page{
     display: flex;
@@ -20,9 +21,25 @@ body{
 .header{
     background-color: #1f2937;
     color: white;
+    display: flex;
+}
+.header .logo,
+.header .headerlinks{
+    flex: 1;
+}
+.header .logo{
+    text-align: left;
+    margin-left: 320px;
+}
+.header .headerlinks{
+    text-align: right;
+    margin-right: 320px;
+
 }
 .header a{
-    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgb(206, 206, 206);
     text-decoration: none;
 }
 .content-one{
@@ -35,6 +52,19 @@ body{
     width: 600px;
     height: 300px;
     
+}
+.content-one button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    background-color: rgb(6, 125, 223);
+    color: white;
+    font-size: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 .content-one .content h1{
     font-size: 80px;
@@ -88,14 +118,51 @@ body{
     background-color: rgb(235, 231, 231);
 }
 .content-three .quote{
-    width: 400px;
+    width: 1200px
 }
 .content-three h1{
-    font-size: 20px;
+    color: rgb(75, 75, 75);
+    font-size: 50px;
+    font-weight: 100;
+}
+.author{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 850px
 }
 .content-four .action{
     background-color: rgb(0, 153, 255);
     display: flex;
+    width: 1300px;
+    height: 200px;
+    justify-content: left;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    line-height: 20px;
+
+}
+.content-four span{
+    font-size: 21px;
+    color: rgb(216, 216, 216);
+}
+.content-four p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 150px;
+}
+.content-four button{
+
+    margin-left: 200px;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(0, 153, 255);
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 20px;
+    color: white;
 }
 .footer{
     background-color:  rgb(37, 37, 37);
